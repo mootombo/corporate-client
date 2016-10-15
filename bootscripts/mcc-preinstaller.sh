@@ -15,10 +15,10 @@ PATH="/sbin:/bin:/usr/sbin:/usr/bin"
 NAME="mcc-preinstaller"
 DESC="Start the mcc-preinstaller"
 
-# MOOTOMBO Corporate Library (MOOCL)
-#. /var/lib/mootombo/library/moocl
+# MOOTOMBO Corporate Script Library (MOOCSL)
+. /usr/lib/mootombo-corporate-client/library/moocsl
 
-# Possible to ovverride MOOCL with defaults
+# Possible to ovverride MOOCSL with defaults
 if [ -r "/etc/default/${NAME}" ]
 then
 	. "/etc/default/${NAME}"
